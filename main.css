@@ -1,9 +1,17 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: rgb(0, 0, 0);
-  background-color: rgb(223, 208, 208);
+  background-color: rgb(230, 227, 227);
   display: flex;
   flex-direction: column;
+  background-image: url("img/pattern.jpg");
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 h1 {
@@ -66,10 +74,7 @@ h4 {
 
 #mainheading {
   font-size: 60px;
-  font-family: "Courier New", Courier, monospace;
   font-weight: bold;
-  color: rgb(78, 67, 173);
-  -webkit-text-stroke: 1px rgb(232, 207, 235);
 }
 
 #mainintro {
@@ -87,26 +92,87 @@ h4 {
 }
 
 .button {
-  height: 60px;
+  height: 40px;
   width: 200px;
-  background-color: rgb(44, 44, 44);
-  border: solid 5px rebeccapurple;
+  background-image: linear-gradient(
+    90deg,
+    rgb(204, 175, 228),
+    rgb(171 229 234)
+  );
+  outline: 3px solid black;
+  outline-offset: 5px;
+  border-radius: 30px;
+  text-align: center;
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+.button:hover {
+  outline-offset: 10px;
+  color: brown;
 }
 
 #student {
   height: 400px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  align-self: center;
+  background: rgb(195, 207, 219);
+  overflow: hidden;
+  margin: 50px;
+}
+
+#studentarea,
+#studentpic {
+  grid-row: 1/2;
+  align-self: center;
+}
+
+#studentarea {
+  padding: 30px;
+  background-color: antiquewhite;
+  grid-column: 4/10;
+}
+
+#studentpic {
+  width: 400px;
+  height: 400px;
+  grid-column: 1/5;
 }
 
 #teacher {
   height: 400px;
+  width: 80%;
+  display: grid;
+  background-color: rgb(204, 175, 228);
+  grid-template-columns: repeat(10, 1fr);
+  margin: 50px;
+  align-self: center;
+}
+
+#teacherarea,
+#teacherpic {
+  grid-row: 1/2;
+  align-self: center;
+}
+
+#teacherarea {
+  padding: 30px;
+  background-color: antiquewhite;
+  grid-column: 2/7;
+}
+
+#teacherpic {
+  width: 400px;
+  height: 400px;
+  grid-column: 6/11;
+}
+
+#footer {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 20px;
+  background-color: rgb(180, 153, 120);
+  text-align: center;
+  padding: 10px;
 }
