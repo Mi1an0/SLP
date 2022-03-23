@@ -223,3 +223,27 @@ h4 {
   font-size: 40px;
   text-decoration: underline;
 }
+
+#Requirement {
+  align-content: center;
+  margin: 100px;
+  text-align: center;
+}
+
+#locsearch {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px;
+}
+
+#searcharea {
+  width: 300px;
+  height: 40px;
+  background: rgb(187, 187, 187);
+  color: black;
+  border-radius: 10px;
+  margin-right: 100px;
+  font-size: 20px;
+  text-align: center;
+}
