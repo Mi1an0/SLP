@@ -1,7 +1,35 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: white;
-  background-color: rgb(56, 56, 56);
+  background-color: rgb(129, 128, 128);
+  background-image: url("img/SLPbg.jpeg");
+  display: flex;
+  flex-direction: column;
+  background-blend-mode: overlay;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .head {
@@ -14,35 +42,48 @@ body {
   position: fixed;
 }
 
+.navbar {
+  width: 250px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .home {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .main {
-  height: 80px;
-  width: 95%;
+  height: 500px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-  position: fixed;
+  align-items: center;
+}
+.mainintro {
+  font-size: larger;
+  font-weight: bolder;
 }
 
 .student {
-  height: 80px;
-  width: 95%;
+  height: 400px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-  position: fixed;
+  align-items: center;
 }
 
 .teacher {
-  height: 80px;
-  width: 95%;
+  height: 400px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-  position: fixed;
+  align-items: center;
 }
