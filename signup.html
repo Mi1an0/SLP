@@ -12,10 +12,41 @@
     <script src='main.js'></script>
 </head>
 <body>
+    <div id="head">
+        <div id="navbar">
+            <a href="index.html"><h4>Home</h4></a>
+            <a href="aboutSLP.html"><h4>about SLP</h4></a>
+        </div>
+    </div>
     <div class="formtitle"><h1>Sign Up</h1></div>
     <div class="formarea">
-        <form action="/signuping" method="post" class="forms">
-            
+        <form action="/signingup" method="post" class="forms">
+            <div class="signupcontainer">   
+                <div class="usertype">
+                    <div>
+                        <input type="radio" id="asateacher" name="usertype" value="Teacher">
+                        <label for="asateacher">Teacher</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="asastudent" name="usertype" value="Student">
+                    <label for="asastudent">Student</label> <br>
+                    </div> 
+                </div>
+                <div>
+                    <label for="userName">User Name</label>
+                    <input type="text" id="userName" autocomplete="off" >
+                 </div>
+                 <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required autocomplete="off">
+                 </div>
+                 <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required >
+                 </div>
+                 <button type="submit" class="button" style="margin: 20px;"><h4>Sign Up</h4></button>
+                 <p>Already a member? <a href="signin.html" class="highlight">Log in</a></p>   
+            </div>   
         </form>
         <img src="img/learnersvg.svg" alt="" class="formpic">
     </div>

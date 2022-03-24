@@ -12,13 +12,38 @@
     <script src='main.js'></script>
 </head>
 <body>
+    <div id="head">
+        <div id="navbar">
+            <a href="index.html"><h4>Home</h4></a>
+            <a href="aboutSLP.html"><h4>about SLP</h4></a>
+        </div>
+    </div>
     <div class="formtitle"><h1>Login</h1></div>
     <div class="formarea">
         <form action="/loggingup" method="post" class="forms">
-            
+            <div class="logincontainer"> 
+                <div class="usertype">
+                    <div>
+                        <input type="radio" id="asateacher" name="usertype" value="Teacher">
+                        <label for="asateacher">Teacher</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="asastudent" name="usertype" value="Student">
+                    <label for="asastudent">Student</label> <br>
+                    </div> 
+                </div>
+                <label>Username : </label>   
+                <input type="text" placeholder="Enter Username" name="username" required>  
+                <label>Password : </label>   
+                <input type="password" placeholder="Enter Password" name="password" required> 
+                <button type="submit" class="button" style="margin: 50px ;"><h4>Log in</h4></button> 
+                <input type="checkbox" checked="checked"> Remember me   <br>   
+                Forgot <a href="#"> password? </a>   
+            </div>   
         </form>
         <img src="img/login.svg" alt="" class="formpic">
     </div>
+    <hr>
     <div id ="noAccount">Don't have Account?  <a href="signup.html" class="highlight">Sign up</a></div>
     <div id="footer">Made by Ritik,Ashish,Abhishek and Milan</div>
 </body>

@@ -22,7 +22,29 @@
     <div class="formtitle"><h1>Post your Requirement</h1></div>
     <div class="formarea">
         <form action="/reqposting" method="post" class="forms">
-            
+            <div class="addReqcontainer">
+                <p>
+                    <label>Skill to Want to learn </label>   
+                    <input type="text" placeholder="Enter Skill" name="Skill" required>
+                </p>
+                <p>
+                    <label>Learning Mode</label>     
+                    <span>
+                        <input type="radio" id="offline" name="Mode" value="Offline">
+                        <label for="asateacher">Offline</label>
+                    </span>
+                    <span>
+                        <input type="radio" id="online" name="Mode" value="Online">
+                    <label for="asastudent">Online</label> <br>
+                    </span>
+                </p>
+                <p>
+                    <label>Address</label>
+                    <input type="Text" placeholder="Enter Address" name="Address" required>
+                </p>
+                 
+                <button type="submit" class="button" style="margin: 50px ;"><h4>POST</h4></button>
+            </div>
         </form>
         <img src="img/posting.svg" alt="" class="formpic">
     </div>
